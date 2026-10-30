@@ -1,6 +1,6 @@
 {
   "name": "bb-plugin-typewriter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "engines": {
     "bb": ">=0.48",
@@ -71,6 +71,10 @@
     "dist/app.meta.json",
     "README.md",
     "PLUGIN_OVERVIEW.md",
-    "LICENSE"
+    "LICENSE",
+    "bundled.ts",
+    "resources",
+    "LICENSES",
+    "ATTRIBUTION.md"
   ]
 }

@@ -8,7 +8,7 @@ it('registers cleanup-safe content scripts and a usable settings page without a 
  expect(app.navPanels).toHaveLength(0);
  const section=app.settingsSections[0]!;
  const slot=renderSlot(section,{}, {settings:{enabled:false,volume:35}});
- await slot.findByText('Built-in synthesized sounds');
+ await slot.findByText('IBM Selectric (included)');
  expect(slot.getByLabelText('Try typewriter sounds')).toBeTruthy();
  expect(slot.getByText('Test Enter sound')).toBeTruthy();
  slot.lifecycle.unmount();await scripts.lifecycle.dispose();

@@ -1,15 +1,10 @@
-# Release preparation
+# Release 0.1.1
 
-Local version: 0.1.0. No public release, tag, repository creation, npm publication or marketplace pull request has been made.
+Repository: https://github.com/creshka/bb-plugin-typewriter
+Previous public release: v0.1.0 at fae41865b76625e810d1669ddd0c206f5601e13d.
 
-Proposed release source: https://github.com/creshka/bb-plugin-typewriter
-Proposed visibility: public
-Proposed branch: main
-Proposed tag: v0.1.0
-Proposed marketplace: BB Community
+The user explicitly requested inclusion of her existing WAV files for an installation that needs no separate sound search or import. Version 0.1.1 includes key.wav, key2.wav, space.wav, delete.wav and enter.wav as the default set and enables sound on new installs. Existing settings are retained.
 
-Before releasing, show the exact Git commit and obtain approval for creating this public repository, pushing the reviewed commit and publishing the v0.1.0 tag. Then prepare the marketplace entry against the current get-bb/marketplace schema, add an original icon and screenshots, validate the remote source and open the metadata pull request.
+Every recording matches the corresponding Git blob in the MIT-declared Acylation/obsidian-click-clack repository at commit 2a5a671164c4534e22963948eba46fddcfead16b. The upstream copyright notice is preserved in LICENSES/Click-Clack-MIT.txt; ATTRIBUTION.md also credits Writemonkey 3 as named in the upstream README. No independent recording authorship is claimed.
 
-The package includes original synthesized audio only. No IBM Selectric or other third-party recordings are redistributed. Imported files stay device-local. Test output and local recordings are excluded from Git and npm packages.
-
-Local checks: TypeScript, unit/SDK integration tests, BB production build, package-content checks, and live browser checks. Public registry acceptance and cross-browser/mobile behavior are not established by these local checks.
+v0.1.0 is immutable. Publish this change as v0.1.1 and use ^0.1.1 in the BB Community marketplace entry.

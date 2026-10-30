@@ -1,7 +1,7 @@
 import { expect, it } from 'vitest';
 import { createFakePluginHost, experimental_scanPublicSdkOnly } from '@get-bb/plugin-sdk/testing';
 import plugin from './server';
-it('defaults to opt-in and rejects invalid volume values',async()=>{
+it('rejects invalid volume values',async()=>{
  const {bb,harness}=createFakePluginHost({pluginId:'typewriter'});
  plugin(bb);
  await expect(harness.behavior.setSettings({volume:101})).rejects.toThrow();
