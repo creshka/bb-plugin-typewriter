@@ -1,0 +1,11 @@
+.typewriter-settings { display: grid; gap: 14px; max-width: 620px; color: var(--foreground); font-size: 14px; }
+.typewriter-settings p, .typewriter-settings small { color: var(--muted-foreground); margin: 0; }
+.typewriter-pack { display: grid; gap: 12px; padding: 16px; border: 1px solid var(--border); border-radius: 12px; }
+.typewriter-settings label { display: grid; gap: 8px; }
+.typewriter-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.typewriter-settings button, .typewriter-settings textarea { border: 1px solid var(--border); border-radius: 8px; color: var(--foreground); background: var(--background); padding: 10px 12px; font: inherit; }
+.typewriter-settings button { cursor: pointer; }
+.typewriter-settings button:disabled { opacity: .5; cursor: default; }
+.typewriter-settings textarea { width: 100%; box-sizing: border-box; resize: vertical; }
+.typewriter-settings [role=alert] { color: var(--destructive); }
+.typewriter-settings input { max-width: 100%; }
